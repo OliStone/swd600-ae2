@@ -1,0 +1,318 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@include foundation-global-styles;
+@include foundation-grid;
+// @include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-card;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-responsive-embed;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+// @include foundation-flex-classes;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+/* ****************************************
+GENERAL SECTION
+**************************************** */
+/* ****************************************
+GENERAL SECTION
+**************************************** */
+
+.wrap {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.off-canvas-wrapper {
+    background-color: #FFF;
+    
+}
+
+.hero-label {
+    font-size: 20px;
+    color: #00033f;
+}
+
+.jlabel {
+    font-size: 20px;
+    color: #FFF;
+}
+
+.column, .columns {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+/* ****************************************
+NAV BAR - MOBILE
+**************************************** */
+.title-bar {
+    background-color: #226;
+    height: 70px;
+    padding-top: 17px;
+}
+
+#mobile-menu {
+    background-color: #226;
+    padding: 10px;
+}
+
+#mobile-menu li {
+    list-style:none;
+    
+}
+
+#mobile-menu a {
+    color: rgba(255,255,255,0.6);
+    font-weight: bold;
+    line-height: 2;
+}
+
+#mobile-menu a:hover {
+    color: rgba(0,0,0,0.5);
+}
+
+.js-off-canvas-exit {
+    
+}
+
+
+
+
+/* ****************************************
+NAV BAR - DESKTOP
+**************************************** */
+.nav-desktop {
+    background-color: #000;
+    height: 80px;
+    padding: 0;
+}
+
+.site-logo {
+    color: white;
+    line-height: 50px;
+    margin-top: 15px;
+}
+
+.nav-desktop .menu-desktop {
+    line-height: 80px;
+    background-color: transparent;
+}
+
+.menu > li > a {
+    display: inline-block;
+    line-height: 80px;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: white;
+}
+
+.menu > li > a:hover {
+    background-color: rgba(255,255,255,0.1);
+    
+}
+
+
+
+
+/* ****************************************
+TOP SECTION
+**************************************** */
+.herop {
+    background-color: #FFF;
+    padding: 40px 0;
+    height: 100px;
+    background-image: url("../img/isometropolis.jpg");
+}
+
+
+
+.hero {
+    background-color: #999;
+    padding: 40px 0;
+    height: 400px;
+    background-image: url("../img/isometropolis.jpg");
+}
+
+.hero h1,
+.hero p {
+    color: rgba(255,255,255,0.8);
+    max-width: 70%;
+}
+
+.button.success {
+    background-color: #33ff33;
+}
+
+
+
+.hero-subtle {
+    background-color: #4d4dff;
+    padding: 40px 0;
+    height: 400px;
+}
+.holder1 {
+    background-color: #226;
+    border-radius: 25px;
+    padding: 20px;
+    color: #fff;
+
+}
+
+.submit1 {
+    margin-top: 25px;
+}
+
+#submit2 {
+    margin-top: 35px;
+}
+
+    
+
+
+/* ****************************************
+MAIN SECTION
+**************************************** */
+.main {
+    padding: 30px 0px;
+    background-color: white;
+}
+
+.holder2 {
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.holder3 {
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-left: 10px;
+}
+
+.apply-button {
+    float: right;
+    border-radius: 25px;
+}
+
+
+
+.card {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+
+
+/* **************************************
+/ FORM STYLES ********************************* */
+select:required:invalid {
+  color: gray;
+}
+option[value=""][disabled] {
+  display: none;
+}
+option {
+  color: black;
+}
+
+
+
+
+/* ****************************************
+FOOTER
+**************************************** */
+footer {
+    background-color: #226;
+    padding: 80px 0px;
+}
+
+footer h4 {
+    color: rgba(255,255,255,0.8);
+    font-size: 1.3em;
+}
+
+footer hr {
+        color: rgba(255,255,255,0.1);
+        margin: 10px 0;
+        
+}
+
+footer a { 
+    display: block;
+    color: rgba(255,255,255,0.6);
+    font-size: 0.8em;
+}
+
+footer a span {
+    font-weight: bold;
+    color: rgba(255,255,255,0.3);
+    
+}
+
+footer a:hover {
+        color: rgba(255,255,255,0.8);
+}
+
+/* ****************************************
+Media Queries
+**************************************** */
+@media (max-width: 639px) {
+    
+    .nav-desktop {
+        display: none;
+    }
+    
+    .submit1 {
+        margin-top: 10px;
+    }
+    
+    .site-logo {
+        float: right;
+        margin-bottom: 10px;
+    }
+    
+    
+}
+
